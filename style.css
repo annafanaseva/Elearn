@@ -1,5 +1,5 @@
 * {
-  font-family: 'Pragmatica', arial;
+  font-family: "Pragmatica", arial;
   font-size: 18px;
   color: var(--main-text);
   font-weight: 700;
@@ -11,14 +11,16 @@ body {
 
 :root {
   --white: #fff;
-  --secondary: #bb5cff;
+  --heliotrope: #bb5cff;
+  --portage-gradient: linear-gradient(180deg, #a590f9 0%, #6a45fb 100%);
+  --royal-blue-gradient: linear-gradient(0deg, #2F61E6 0%, #96D1FF 106.36%);
   --tertiary: #3e4e61;
   --main-text: #203a59;
   --body-text: #9295a3;
 }
 
 .text-accent {
-  color: var(--secondary);
+  color: var(--heliotrope);
 }
 
 .hero {
@@ -56,7 +58,7 @@ section {
 }
 
 .active {
-  background: var(--secondary);
+  background: var(--heliotrope);
   color: var(--white);
   padding: 10px 20px;
   border-radius: 10px;
@@ -68,7 +70,6 @@ section {
 }
 
 .main-left {
-
   /* max-width: 700px; */
 }
 
@@ -78,7 +79,7 @@ section {
   left: -30px;
   width: 120px;
   height: 80px;
-  background-image: linear-gradient(to right, var(--secondary), rgba(255, 0, 0, 0));
+  background-image: linear-gradient(to right, var(--heliotrope), rgba(255, 0, 0, 0));
   border-radius: 10px;
 }
 
@@ -156,7 +157,7 @@ section {
   top: -50px;
   left: -50px;
   border-color: 10px;
-  background: var(--secondary);
+  background: var(--heliotrope);
   width: 103px;
   height: 103px;
   border-radius: 16px;
@@ -167,7 +168,7 @@ section {
   top: -50px;
   right: -50px;
   border-color: 10px;
-  background: #A590F9;
+  background: #a590f9;
   width: 103px;
   height: 114px;
   border-radius: 24px;
@@ -178,7 +179,7 @@ section {
   bottom: -20px;
   left: -50px;
   border-color: 10px;
-  background: #2F61E6;
+  background: #2f61e6;
   width: 103px;
   height: 103px;
   border-radius: 16px;
@@ -280,9 +281,8 @@ section {
 }
 
 .start-right {
-  margin-top: 140px;
+  margin: 200px 200px 0 0;
   width: 480px;
-  margin-right: 200px;
 }
 
 .start-right-text {
@@ -303,7 +303,7 @@ section {
   left: -30px;
   width: 120px;
   height: 70px;
-  background-image: linear-gradient(to right, var(--secondary), rgba(255, 0, 0, 0));
+  background-image: linear-gradient(to right, var(--heliotrope), rgba(255, 0, 0, 0));
   border-radius: 10px;
 }
 
@@ -315,7 +315,7 @@ section {
 }
 
 .start-button {
-  background: var(--secondary);
+  background: var(--heliotrope);
   color: var(--white);
   padding: 12px 24px;
   border-radius: 10px;
@@ -368,15 +368,160 @@ section {
 
 .skills {
   margin-top: 160px;
-  background: #FEFAFF;
+  background: #fefaff;
 }
 
-.skills-main{
+.skills-main {
+  padding-top: 100px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.skills-title-wrapper {
   position: relative;
+  padding-top: 10px;
 }
 
 .skills-title {
+  position: relative;
   font-size: 40px;
-  padding: 120px 0;
   text-align: center;
+  z-index: 10;
 }
+
+.skills-subtitle {
+  font-weight: 400;
+  max-width: 620px;
+  font-size: 18px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 26px;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.skills-wrapper-card {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  border-radius: 40px;
+  padding: 40px;
+  background: var(--white);
+}
+
+.skills-wrapper-card:first-child {
+  margin-left: 0;
+}
+
+.skills-card-title {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.skills-card-subtitle {
+  margin-top: 10px;
+  text-align: center;
+  max-width: 310px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.features-left {
+  max-width: 460px;
+}
+
+.features-title-wrapper {
+  position: relative;
+}
+
+.features-title {
+  position: relative;
+  font-size: 40px;
+  line-height: 54px;
+  z-index: 10;
+}
+
+.features-accent-background {
+  width: 98px;
+  height: 65px;
+}
+
+.features-right {
+  margin-top: 60px;
+}
+
+.features-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 30px;
+  line-height: 24px;
+}
+
+.features-items {
+  margin-top: 30px;
+}
+
+.features-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.features-item:last-child{
+  margin-bottom: 0;
+}
+
+.features-item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.heliotrope-background {
+  background: var(--heliotrope);
+}
+
+.portage-gradient-background {
+  background: var(--portage-gradient);
+}
+
+.royal-blue-background{
+  background: var(--royal-blue-gradient);
+}
+
+.features-item-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  max-width: 250px;
+}
+
+.features-item-title {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.features-item-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
