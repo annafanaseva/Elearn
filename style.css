@@ -682,6 +682,7 @@ section {
 }
 
 .footer {
+  position: relative;
   padding-bottom: 50px;
   margin: 0 auto;
   display: flex;
@@ -734,7 +735,6 @@ section {
 .footer-item ul {
   padding: 0;
   list-style: none;
-
 }
 
 .footer-item li {
@@ -745,4 +745,23 @@ section {
 
 .footer-item li:last-child {
   margin-bottom: 0;
+}
+
+.footer-pluses {
+  position: absolute;
+  right: 0;
+}
+
+.footer-ellipse {
+  position: absolute;
+  right: -20px;
+  top: 140px;
+  opacity: 0.5;
+}
+
+.footer-semicircle {
+  position: absolute;
+  right: -160px;
+  bottom: 100px;
+  opacity: 0.5;
 }
