@@ -30,8 +30,8 @@ body {
   z-index: -1;
 
   background: url(img/hero-img/hero-background.svg) no-repeat;
-  height: 900px;
-  background-position: center ;
+  height: 880px;
+  background-position: center;
   width: 100%;
 }
 
@@ -44,6 +44,11 @@ section {
   padding: 50px 135px 0 135px;
   display: flex;
   justify-content: space-between;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .header-wrapper ul {
@@ -112,6 +117,8 @@ section {
 }
 
 .main-links-item {
+  position: relative;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -682,13 +689,13 @@ section {
 .footer {
   position: relative;
   padding-bottom: 50px;
-  margin: 0 auto;
+  width: 1050px;
   display: flex;
-  justify-content: center;
 }
 
 .footer-left-wrapper {
   max-width: 500px;
+  margin-left: -40px;
 }
 
 .footer-subtitle {
@@ -722,7 +729,7 @@ section {
 }
 
 .footer-item {
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 .footer-item-title {
@@ -747,19 +754,19 @@ section {
 
 .footer-pluses {
   position: absolute;
-  right: 0;
+  right: -30px;
 }
 
 .footer-ellipse {
   position: absolute;
-  right: -20px;
+  right: -60px;
   top: 140px;
   opacity: 0.5;
 }
 
 .footer-semicircle {
   position: absolute;
-  right: -160px;
+  right: -194px;
   bottom: 100px;
   opacity: 0.5;
 }
