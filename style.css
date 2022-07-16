@@ -16,9 +16,11 @@ body {
   --portage-gradient: linear-gradient(180deg, #a590f9 0%, #6a45fb 100%);
   --royal-blue-gradient: linear-gradient(0deg, #2f61e6 0%, #96d1ff 106.36%);
   --electric-violet-gradient: linear-gradient(0deg, #a734ff 0%, #d092ff 106.36%);
+  --button-gradient: linear-gradient(to right, var(--heliotrope), #d092ff , var(--heliotrope) , #d092ff);
   --tertiary: #3e4e61;
   --main-text: #203a59;
   --alto: #d8d8d8;
+  --shadow: 0px 15px 20px rgba(#bb5cff, 0.4);
 }
 
 .text-accent {
@@ -70,6 +72,7 @@ section {
   color: var(--white);
   padding: 10px 20px;
   border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .main {
@@ -333,6 +336,20 @@ section {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+
+  background-size: 300% 100%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  -o-transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  background-image:  var(--button-gradient);
+}
+
+.button:hover {
+  background-position: 100% 0;
+  -o-transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 
 .start-phone {
